@@ -10,14 +10,12 @@ function App() {
     <div className="App">
   <nav>
   <Link to ="/dog/random">Dog</Link>{" "}
-  <Link to ="/dog/random/:num">Dog by Numbers</Link>{" "}
-  <Link to ="/dog/:breed">Dog by Breed</Link>{" "}
+ 
   </nav>
 
   <Switch>
   <Route exact path="/dog/random" component={Dog}/>
-  <Route path="/dog/random/:num" component={Dog}/>
-  <Route path="/dog/:breed" component={Dog}/>
+
   </Switch>
     </div>
   );
